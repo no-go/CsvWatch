@@ -1,0 +1,6 @@
+.vs
+obj
+bin
+!bin\CsvWatch.exe
+!bin\CsvWatch.exe.config
+*.suo

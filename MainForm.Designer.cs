@@ -79,6 +79,7 @@ namespace CsvWatch
 			this.Lab1 = new System.Windows.Forms.Label();
 			this.Label1 = new System.Windows.Forms.Label();
 			this.OpenFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+			this.OpenFileDialog2 = new System.Windows.Forms.OpenFileDialog();
 			this.MenuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
 			this.GroupBox1.SuspendLayout();
@@ -158,7 +159,8 @@ namespace CsvWatch
 			// 
 			this.KonfigurationToolStripMenuItem.Name = "KonfigurationToolStripMenuItem";
 			this.KonfigurationToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-			this.KonfigurationToolStripMenuItem.Text = "load config (not implemented)...";
+			this.KonfigurationToolStripMenuItem.Text = "load config...";
+			this.KonfigurationToolStripMenuItem.Click += new System.EventHandler(this.KonfigurationToolStripMenuItemClick);
 			// 
 			// BeendenToolStripMenuItem
 			// 
@@ -521,6 +523,12 @@ namespace CsvWatch
 			this.OpenFileDialog1.FilterIndex = 2;
 			this.OpenFileDialog1.Title = "select a TXT or CSV file...";
 			// 
+			// OpenFileDialog2
+			// 
+			this.OpenFileDialog2.Filter = "Config files|*.conf";
+			this.OpenFileDialog2.FilterIndex = 1;
+			this.OpenFileDialog2.Title = "select a Config file...";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,6 +548,7 @@ namespace CsvWatch
 			this.PerformLayout();
 		}
 		internal System.Windows.Forms.OpenFileDialog OpenFileDialog1;
+		internal System.Windows.Forms.OpenFileDialog OpenFileDialog2;
 		internal System.Windows.Forms.Label Label1;
 		internal System.Windows.Forms.Label Lab1;
 		internal System.Windows.Forms.Label Lab2;
@@ -556,13 +565,13 @@ namespace CsvWatch
 		internal System.Windows.Forms.TextBox tb_krit2;
 		internal System.Windows.Forms.TextBox tb_krit3;
 		internal System.Windows.Forms.TextBox tb_krit4;
-		internal System.Windows.Forms.TextBox tb_krit6;
-		internal System.Windows.Forms.GroupBox GroupBox1;
 		internal System.Windows.Forms.TextBox tb_krit5;
+		internal System.Windows.Forms.TextBox tb_krit6;
 		internal System.Windows.Forms.TextBox tb_krit7;
 		internal System.Windows.Forms.TextBox tb_krit8;
 		internal System.Windows.Forms.TextBox tb_pro3;
 		internal System.Windows.Forms.TextBox tb_pro4;
+		internal System.Windows.Forms.GroupBox GroupBox1;
 		internal System.Windows.Forms.DataGridView DataGridView1;
 		internal System.Windows.Forms.TextBox tb_pro1;
 		internal System.Windows.Forms.TextBox tb_pro2;

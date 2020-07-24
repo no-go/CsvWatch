@@ -64,6 +64,20 @@ namespace CsvWatch
 			loadCsv(OpenFileDialog1.FileName);
 			DataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
 		}
+		
+		void KonfigurationToolStripMenuItemClick(object sender, EventArgs e) {
+			if (OpenFileDialog2.ShowDialog() != DialogResult.OK) return;
+			string[] lines = System.IO.File.ReadAllLines(OpenFileDialog2.FileName);
+			if (lines.Length < 8) return;
+			tb_pro1.Text = lines[0];
+			tb_pro2.Text = lines[1];
+			tb_pro3.Text = lines[2];
+			tb_pro4.Text = lines[3];
+			tb_pro5.Text = lines[4];
+			tb_pro6.Text = lines[5];
+			tb_pro7.Text = lines[6];
+			tb_pro8.Text = lines[7];
+		}
 	
 		double Median(double[] YourArray) {
 			int size = YourArray.Length;

@@ -7,5 +7,5 @@ appear (double click on color text field).
 
 ![screenshot](screenshot.jpg)
 
-This is a hacky alpha version. Main focus on building cSharp with msbuild
+This is a hacky beta version. Main focus on building cSharp with msbuild
 and running the exe with mono (Linux or Rasperry Pi 1).
